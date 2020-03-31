@@ -1,0 +1,78 @@
+site_name: guatemamask
+
+nav:
+    - Pagina Principal: 'index.md'
+    - Acerca de: 'about.md'
+
+
+site_author: Marcos Cano
+site_description: All about Docker, K8 and Containers in general
+
+#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+
+repo_name: guatemamask
+repo_url: https://github.com/jmarcos-cano/guatemamask/src
+edit_uri: ""
+
+theme:
+  name: material
+  palette:
+    primary: "light blue"
+    accent: 'green'
+  logo: 'assets/images/gamask.png'
+  font:
+    text: 'Space Mono'
+    code: 'Inconsolata'
+  language: 'en'
+  favicon: 'assets/images/favicon.ico'
+  #include_sidebar: True
+#   feature:
+#     tabs: true
+
+
+extra:
+  manifest: 'manifest.webmanifest'
+#   search:
+#     language: 'en, es'
+  social:
+    - type: 'github'
+      link: 'https://github.com/jmarcos-cano/guatemamask/'
+    - type: 'twitter'
+      link: 'https://twitter.com/Marcos_Kno'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/Guateamask-101015961562514'
+
+plugins:
+  #- search
+  #- macros
+  #- markdownextradata: {}
+markdown_extensions:
+  - codehilite:
+        guess_lang: False
+        use_pygments: True
+        noclasses: True
+        pygments_style: monokai
+  - footnotes
+  #- admonition
+  - meta
+#   - toc:
+#         permalink: true
+  - pymdownx.extra
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.smartsymbols
+
+extra_css:
+    - assets/css/extra.css
+
+use_directory_urls: true
